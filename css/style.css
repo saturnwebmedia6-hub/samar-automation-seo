@@ -675,7 +675,8 @@ ul.top-nav li a {
   border: none;
   padding: 10px 15px;
   min-width: 240px;
-  background-color: #f60404;
+  /* background-color: #f60404; */
+  background-color: #001a3d;
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-item {
