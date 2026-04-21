@@ -320,24 +320,73 @@
     </div>
   </footer>
 
-  <div style="background-color:#f60404; margin-bottom: 0%; padding-bottom: 0%;">
-  <div class="container" style="background-color:#f60404; font-size: 15px; padding: 10px 20px; color: #f8f8f8; display: flex; justify-content: space-between; align-items: center;">
+  <div style="background-color:#f60404;">
+  <div class="container footer-bar">
 
-  <div style="text-align: left;">
-    © Copyright 
-    <a href="https://samarautomation.com/" target="_blank" style="color:#ffffff; text-decoration: none;">
-      Samar Automation
-    </a> 2016
-  </div>
+    <!-- Center Text -->
+    <div class="footer-center">
+      © Copyright 
+      <a href="https://samarautomation.com/" target="_blank">
+        Samar Automation
+      </a> 2016
+    </div>
 
-  <div style="text-align: right;">
-    Promoted by 
-    <a href="https://saturnwebmedia.com/" target="_blank" style="color:#ffffff; text-decoration: none;">
-      Saturn Web Media
-    </a>
+    <!-- Right Text -->
+    <div class="footer-right">
+      Promoted by 
+      <a href="https://saturnwebmedia.com/" target="_blank">
+        Saturn Web Media
+      </a>
+    </div>
+
   </div>
 </div>
-</div>
+
+<style>
+.footer-bar {
+  position: relative;
+  font-size: 15px;
+  padding: 10px 20px;
+  color: #f8f8f8;
+  text-align: center;
+}
+
+/* Center Text */
+.footer-center a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Right Text Desktop */
+.footer-right {
+    color: #f60404;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footer-right a {
+  /* color: #fff; */
+  color: #f60404;
+  text-decoration: none;
+}
+
+/* 📱 Mobile View */
+@media (max-width: 768px) {
+  .footer-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-right {
+    position: static;
+    transform: none;
+    margin-top: 5px;
+  }
+}
+</style>
 
   <div class="c-icon-bar">
     <a href="https://wa.me/9657801999/?text=Hi" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
