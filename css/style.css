@@ -80,6 +80,15 @@ a:hover {
   color: #f60404;
   text-decoration: none;
 }
+.main-footer li a{
+  color: #000F22;
+}
+
+.main-footer li{
+ padding-bottom: 10px;
+ list-style-type: disc;
+
+}
 
 /* 📱 Mobile View */
 @media (max-width: 768px) {
@@ -93,6 +102,122 @@ a:hover {
     position: static;
     transform: none;
     margin-top: 5px;
+  }
+}
+/* .submenu-parent {
+  position: relative;
+}
+
+.submenu {
+  position: absolute;
+  top: 0;
+  left: 105%;
+  min-width: 220px;
+  display: none;
+  background: #001a3d;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.submenu.show {
+  display: block;
+}
+
+.dropdown-menu {
+  background: #0b2a4a;
+  width: 260px;
+}
+
+.dropdown-item {
+  color: #fff;
+}
+
+.dropdown-item:hover {
+  background: transparent;
+  color: #fff;
+}
+
+.arrow {
+  transition: transform 0.3s;
+}
+
+.arrow.rotate {
+  transform: rotate(90deg);
+} */
+ /* parent */
+.submenu-parent {
+  position: relative;
+}
+
+/* submenu - desktop */
+.submenu {
+  position: absolute;
+  top: 0;
+  left: 105%;
+  min-width: 220px;
+  display: none;
+  background: #001a3d;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 999;
+}
+
+/* show submenu */
+.submenu.show {
+  display: block;
+}
+
+/* main dropdown */
+.dropdown-menu {
+  background: #0b2a4a;
+  width: 260px;
+}
+
+/* links */
+.dropdown-item {
+  color: #fff;
+}
+
+.dropdown-item:hover {
+  background: transparent;
+  color: #fff;
+}
+
+/* arrow */
+.arrow {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.arrow.rotate {
+  transform: rotate(90deg);
+}
+
+
+/* 🔥 MOBILE FIX (IMPORTANT) */
+@media (max-width: 991px) {
+
+  .submenu {
+    position: static;
+    left: 0;
+    width: 100%;
+    display: none;
+    margin-top: 5px;
+    padding-left: 15px;
+  }
+
+  .submenu.show {
+    display: block;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+  }
+
+  .submenu-parent > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -719,7 +844,7 @@ ul.top-nav li a {
 .navbar-expand-lg .navbar-nav .dropdown-menu {
   border: none;
   padding: 10px 15px;
-  min-width: 240px;
+  min-width: 309px;
   /* background-color: #f60404; */
   background-color: #001a3d;
 }
@@ -820,6 +945,11 @@ ul.top-menu li a .indicator {
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
 } */
 @media all and (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .dropdown-menu{
+    min-width: 350px;
+    position: absolute;
+    left: -20px;
+  }
   .navbar .dropdown-menu-end {
     right: 0;
     left: auto;
