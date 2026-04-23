@@ -1519,7 +1519,7 @@ About us Section
   position: relative;
 }
 .aboutus-section p{
-  text-align: justify;
+  text-align: left;
 }
 .aboutus-section>.elementor-background-overlay {
   background-image: url(https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/bg-shape-02.png);
