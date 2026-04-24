@@ -28,6 +28,20 @@
   <link rel="stylesheet" type="text/css" media="screen" href="css/owl.theme.default.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+
+  <style>
+    .jot-form {
+    height: 60px;
+    width:100%;
+    background-color: #ffffff;
+    position: relative;
+    top: -64px;
+    z-index: 1;
+    
+  
+
+}
+  </style>
 </head>
 
 <body>
@@ -292,11 +306,11 @@
           </ul>
         </div>
         <div class="col-lg-6 col-xl-6 col-sm-12 col-md-12 col-12 mb-3">
-          <div class="career-card">
+          <div class="">
             <div class="card-body">
               <h4>Send your resume</h4>
               <p>Please fill the below details for send your resume</p>
-             <form action="submit.php" method="POST" enctype="multipart/form-data" class="p-2 needs-validation" novalidate>
+             <!-- <form action="submit.php" method="POST" enctype="multipart/form-data" class="p-2 needs-validation" novalidate>
 
 
   <div class="form-group">
@@ -313,7 +327,6 @@
 
   <div class="form-group">
     <label>Email ID</label>
-    <!-- ❗ typo fix emial → email -->
     <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
     <div class="invalid-feedback"> Please enter valid email</div>
   </div>
@@ -329,7 +342,6 @@
     <div class="invalid-feedback"> Please enter skill details</div>
   </div>
 
-  <!-- ✅ NEW: Resume Upload -->
   <div class="form-group">
     <label>Upload Resume</label>
     <input type="file" class="form-control" name="resume" required>
@@ -337,8 +349,24 @@
 
   <button type="submit" class="btn btn-lg btn-primary">Send Resume</button>
 
-</form>
-
+</form> -->
+               
+    <iframe
+      id="JotFormIFrame-261132156491452"
+      title="Blue Sky Contact Form"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allow="geolocation; microphone; camera; fullscreen; payment"
+      src="https://form.jotform.com/261132156491452"
+      frameborder="0"
+      style="min-width:100%;max-width:100%;height:539px;border:none;"
+      scrolling="no"
+    >
+    </iframe>
+    <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+    <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-261132156491452']", "https://form.jotform.com/")</script>
+    
+           <div class="jot-form"></div>  
             </div>
           </div>
         </div>
